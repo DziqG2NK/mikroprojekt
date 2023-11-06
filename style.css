@@ -1,0 +1,212 @@
+/* Główny szablon */
+
+body {
+    margin: 0;
+    background-color: #000d1a;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    background-color: #000d1a;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+#narrow {
+    padding-top: 20px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+}
+
+header {
+    height: 80px;
+}
+
+header p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.brick {
+    transition: transform 0.4s ease, background-color 0.6s ease;
+    border-radius: 20px;
+}
+
+.brick p {
+    font-size: 20px;
+}
+
+.brick:hover {
+    transform: scale(1.1);
+    background-color: #0059b3;
+    opacity: 80%;
+    cursor: pointer;
+    /*font-weight: 700;*/
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 0 5%;
+}
+
+main {
+    background-image: url("photos/1.jpg");
+    background-size: 100%;
+    /*filter: blur(4px);*/
+    overflow: scroll;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    color: white;
+}
+
+#content {
+    margin-top: 70px;
+    background-color: #1a1a1a;
+    opacity: 90%;
+    border: 3px solid white;
+    border-bottom: 0px; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+#space {
+    margin: 20px 20px 0 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+footer {
+    padding-top: 10px;
+    height: 40px;
+    background-color: #000d1a;
+    border-top: 3px solid white;
+    color: white;
+}
+
+/* Galeria */
+
+.row1 {
+    margin: 40px 20px 100px 20px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.row2 {
+    margin: 40px 20px 100px 20px;
+    height: 300px;
+    display: grid;
+    grid-template-columns:11% 33.3% 11% 33.3% 11%;
+}
+
+.photo_block {
+    padding: 10px;
+}
+
+.photo_block:hover img {
+    transform: scale(1.1);
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 3px;
+    transition: transform 0.4s ease; 
+}
+
+.description {
+    opacity: 1;
+}
+
+.photo_block:hover .descriprion {
+    transform: translateY(50px), opacity 0.6s ease;
+}
+
+/* Jak obserwować? */
+
+.photo_block_observation:hover img {
+    transform: scale(1.1);
+}
+
+.photo_block_observation:hover .description_observation {
+    transform: scale(1.1);
+}
+
+/* Strona główna */
+
+.important_message {
+    margin-top: 100px;
+    height: 300px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.big_header {
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    height: 100px;
+    font-size: 60px;
+    text-align: left;
+}
+
+.small_header {
+    font-weight: 700;
+    margin: 60px 0 20px 0;
+    height: 70px;
+    font-size: 30px;
+    text-align: left;
+}
+
+#space p {
+    text-align: left;
+    margin: 10px 0 30px 0;
+}
+
+.small_text {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Kontakt */
+
+.mail {
+    margin-left: 10px;
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#send {
+    width: 100px;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#message {
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
